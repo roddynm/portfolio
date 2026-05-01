@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -19,114 +20,48 @@
 
 <main>
 
-<!-- SIDEBAR (unchanged) -->
+<!-- SIDEBAR (UNCHANGED) -->
+
 <aside class="sidebar" data-sidebar>
-
   <div class="sidebar-info">
-
     <figure class="avatar-box">
       <img src="./assets/images/my-avatar.png" alt="Roddy Mendoza" width="80">
     </figure>
 
-    <div class="info-content">
-      <h1 class="name" title="Roddy Mendoza">Roddy Mendoza</h1>
-      <p class="title">Aspiring CS Professional</p>
-    </div>
-
-    <button class="info_more-btn" data-sidebar-btn>
-      <span>Show Contacts</span>
-      <ion-icon name="chevron-down"></ion-icon>
-    </button>
+```
+<div class="info-content">
+  <h1 class="name">Roddy Mendoza</h1>
+  <p class="title">Aspiring CS Professional</p>
+</div>
+```
 
   </div>
-
-  <div class="sidebar-info_more">
-
-    <div class="separator"></div>
-
-    <ul class="contacts-list">
-
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="mail-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Email</p>
-          <a href="mailto:mendozaroddy12@gmail.com" class="contact-link">mendozaroddy12@gmail.com</a>
-        </div>
-      </li>
-
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="phone-portrait-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Phone</p>
-          <a href="tel:+18153213129" class="contact-link">+1 (815) 321-3129</a>
-        </div>
-      </li>
-
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="calendar-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Birthday</p>
-          <time datetime="2002-05-12">May 12th, 2002</time>
-        </div>
-      </li>
-
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="navigate-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Location</p>
-          <address>Chicago, Illinois, USA</address>
-        </div>
-      </li>
-
-    </ul>
-
-    <div class="separator"></div>
-
-    <ul class="social-list">
-      <li class="social-item">
-        <a href="https://linkedin.com/in/roderick-mendoza-6b959a3ba" target="_blank">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-      </li>
-
-      <li class="social-item">
-        <a href="https://github.com/roddynm" target="_blank">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-      </li>
-    </ul>
-
-  </div>
-
 </aside>
 
-<!-- MAIN CONTENT -->
+<!-- MAIN -->
+
 <div class="main-content">
 
-<!-- NAVBAR (Contact removed only) -->
+<!-- NAVBAR -->
+
 <nav class="navbar">
   <ul class="navbar-list">
 
-    <li class="navbar-item">
-      <button class="navbar-link active" data-nav-link>About</button>
-    </li>
+```
+<li class="navbar-item">
+  <button class="navbar-link active" data-nav="about">About</button>
+</li>
 
-    <li class="navbar-item">
-      <button class="navbar-link" data-nav-link>Resume</button>
-    </li>
+<li class="navbar-item">
+  <button class="navbar-link" data-nav="resume">Resume</button>
+</li>
+```
 
   </ul>
 </nav>
 
-<!-- ABOUT (FULL ORIGINAL) -->
+<!-- ABOUT -->
+
 <article class="about active" data-page="about">
 
   <header>
@@ -138,83 +73,106 @@
       I'm an eager CS student with a strong foundation in IT support, security principles, and client-focused solutions. Open to developing technical expertise in threat prevention, information assurance, and secure system practices while continuing to grow within the CS field.
     </p>
 
-    <p>
-      Current Geek Squad Agent with hands-on experience diagnosing technical issues, supporting client devices, and promoting secure digital practices. Combines technical knowledge with sales skillsets to deliver clear solutions and a high-quality client experience.
-    </p>
+```
+<p>
+  Current Geek Squad Agent with hands-on experience diagnosing technical issues, supporting client devices, and promoting secure digital practices. Combines technical knowledge with sales skillsets to deliver clear solutions and a high-quality client experience.
+</p>
+```
+
   </section>
 
   <section class="service">
     <h3 class="h3 service-title">Core Technical Capabilities</h3>
 
-    <ul class="service-list">
+```
+<ul class="service-list">
 
-      <li class="service-item">
-        <div class="service-content-box">
-          <h4 class="h4 service-item-title">Technical Sales & Client Communication</h4>
-          <p class="service-item-text">
-            Combines technical expertise with high-level sales performance to translate complex solutions into clear, value-driven recommendations.
-          </p>
-        </div>
-      </li>
+  <li class="service-item">
+    <h4>Technical Sales & Client Communication</h4>
+    <p>Translates complex technical solutions into clear recommendations.</p>
+  </li>
 
-      <li class="service-item">
-        <div class="service-content-box">
-          <h4 class="h4 service-item-title">Cybersecurity Fundamentals & Risk Mitigation</h4>
-          <p class="service-item-text">
-            Applies industry-standard cybersecurity principles including threat detection and secure practices.
-          </p>
-        </div>
-      </li>
+  <li class="service-item">
+    <h4>Cybersecurity Fundamentals</h4>
+    <p>Understands risk mitigation, MFA, and secure practices.</p>
+  </li>
 
-      <li class="service-item">
-        <div class="service-content-box">
-          <h4 class="h4 service-item-title">IT Diagnostics & Systems Troubleshooting</h4>
-          <p class="service-item-text">
-            Performs structured diagnostics and resolves system issues across a wide range of devices.
-          </p>
-        </div>
-      </li>
+  <li class="service-item">
+    <h4>IT Troubleshooting</h4>
+    <p>Diagnoses hardware/software issues across devices.</p>
+  </li>
 
-      <li class="service-item">
-        <div class="service-content-box">
-          <h4 class="h4 service-item-title">Foundational Networking Knowledge & Support</h4>
-          <p class="service-item-text">
-            Solid understanding of networking concepts and troubleshooting practices.
-          </p>
-        </div>
-      </li>
+  <li class="service-item">
+    <h4>Networking Basics</h4>
+    <p>Understands connectivity and troubleshooting fundamentals.</p>
+  </li>
 
-    </ul>
+</ul>
+```
+
   </section>
 
 </article>
 
-<!-- RESUME (FULL ORIGINAL) -->
+<!-- RESUME -->
+
 <article class="resume" data-page="resume">
 
   <header>
     <h2 class="h2 article-title">Resume</h2>
   </header>
 
+  <!-- Education -->
+
   <section class="timeline">
+    <h3>Education</h3>
+    <p><strong>Western Governors University</strong></p>
+    <p>Expected 2027</p>
+    <p>Cyber Security & Information Assurance</p>
+  </section>
 
-    <div class="title-wrapper">
-      <div class="icon-box">
-        <ion-icon name="school-outline"></ion-icon>
-      </div>
-      <h3 class="h3">Education</h3>
-    </div>
+  <!-- Certifications -->
 
-    <ol class="timeline-list">
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Western Governors University</h4>
-        <span>Expected 2027</span>
-        <p class="timeline-text">
-          Bachelors of Science<br>
-          Cyber Security & Information Assurance
-        </p>
-      </li>
-    </ol>
+  <section class="timeline">
+    <h3>Certifications</h3>
+    <ul>
+      <li>CompTIA A+</li>
+      <li>CompTIA Network+</li>
+      <li>CompTIA Security+</li>
+      <li>ITIL 4</li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+
+  <section class="timeline">
+    <h3>Experience</h3>
+
+```
+<p><strong>Geek Squad Agent @ Best Buy</strong></p>
+<p>2026 — Present</p>
+
+<p><strong>LG Specialist @ Best Buy</strong></p>
+<p>2025 — 2026</p>
+
+<p><strong>Sales Advisor @ Best Buy</strong></p>
+<p>2023 — 2025</p>
+```
+
+  </section>
+
+  <!-- PDF -->
+
+  <section class="timeline">
+    <h3>Full Resume</h3>
+
+```
+<a href="./assets/files/Roddy-Mendoza Resume.pdf"
+   target="_blank"
+   style="color: var(--orange-yellow-crayola);">
+   📄 Open Resume PDF
+</a>
+```
 
   </section>
 
@@ -223,10 +181,26 @@
 </div>
 </main>
 
-<script src="./assets/js/script.js"></script>
+<!-- FIXED NAV SCRIPT -->
 
-<script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/ionicons/ionicons.js"></script>
+<script>
+const navBtns = document.querySelectorAll("[data-nav]");
+const pages = document.querySelectorAll("[data-page]");
+
+navBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+
+    navBtns.forEach(b => b.classList.remove("active"));
+    pages.forEach(p => p.classList.remove("active"));
+
+    btn.classList.add("active");
+
+    const target = btn.getAttribute("data-nav");
+    document.querySelector(`[data-page="${target}"]`)
+      .classList.add("active");
+  });
+});
+</script>
 
 </body>
 </html>
